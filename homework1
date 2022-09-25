@@ -1,0 +1,32 @@
+#1, checking even/odd numbers
+num=int(input("Enter your number: "))
+if(num % 2 == 0):
+    print(num,"is even number")
+else:
+    print(num,"is odd number")
+
+#2,checking vowel/consonant letters
+ch=input("Enter your character:")
+if(ch=='a' or ch=='e' or ch=='u' or ch=='i' or ch=='o'
+or ch=='A' or ch=='E' or ch=='U' or ch=='I' or ch=='O'):
+    print(ch,"is vowel letter")
+else:
+    print(ch,"is consonant letter")
+    
+ #3,Fibonacci's nth number
+n=int(input("Type number"))
+arr=[0,1]
+for i in range(2,n):
+    arr.append(arr[i-1]+arr[i-2])
+print("aaa")
+print(arr[i])   
+    
+    
+#4,sum of number digits
+num=input("Enter your number:")
+sum=0
+for i in num:
+    sum+=int(i)
+print("Sum =",sum)
+    
+   
