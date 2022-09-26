@@ -1,11 +1,11 @@
-#1, checking even/odd numbers
+#1)checking even/odd numbers
 num=int(input("Enter your number: "))
 if(num % 2 == 0):
     print(num,"is even number")
 else:
     print(num,"is odd number")
 
-#2,checking vowel/consonant letters
+#2)checking vowel/consonant letters
 ch=input("Enter your character:")
 if(ch=='a' or ch=='e' or ch=='u' or ch=='i' or ch=='o'
 or ch=='A' or ch=='E' or ch=='U' or ch=='I' or ch=='O'):
@@ -13,7 +13,7 @@ or ch=='A' or ch=='E' or ch=='U' or ch=='I' or ch=='O'):
 else:
     print(ch,"is consonant letter")
     
- #3,Fibonacci's nth number
+ #3)Fibonacci's nth number
 n=int(input("Type number"))
 arr=[0,1]
 for i in range(2,n):
@@ -22,11 +22,21 @@ print("aaa")
 print(arr[i])   
     
     
-#4,sum of number digits
+#4) sum of number digits
 num=input("Enter your number:")
 sum=0
 for i in num:
     sum+=int(i)
 print("Sum =",sum)
+
+#5)square pattern
+for i in range(5):
+    for j in range(5):
+        if(i==0 or i==4 or j==0 or j==4):
+            print('*',end = "")
+        else:
+            print(" ",end="")
+    print("\n")        
+         
     
    
