@@ -1,0 +1,38 @@
+#1) weigth in kgs to pounds
+weight=float(input("Please enter your weight in kg:"))
+print(weight,"kg=",weight*2.2,"pounds")
+
+#2)50 random integers generation
+import random
+for i in range(1,51):
+    print(random.randint(3,6))
+    
+#3) |x-y|/x+y
+x=int(input("Enter x: "))
+y=int(input("Enter y: "))
+print("|x-y| / x+y = ",end="")
+if(x-y)>=0:
+     print((x-y)/(x+y))
+else:
+   print((x-y)*(-1)/(x+y))
+   
+#4)leap years 
+year=int(input("Enter year: "))
+count=0
+for i in range(1600,year+1):
+    if(i%4==0):
+        if(i%100!=0):
+            count+=1
+        elif(i%400==0):
+            count+=1
+print("There are ",count,"leap year(s) from 1600 to",year) 
+
+#5)perfect numbers
+sum=0
+for num in range(1,10000):
+    for i in range(1,num):
+        if(num%i==0):
+            sum+=i
+    if(num==sum):
+        print(num)
+    sum=0
